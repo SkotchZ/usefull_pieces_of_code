@@ -1,0 +1,2 @@
+stringt = "men\\u2019s about men\\u2019s"
+stringt, _ = apply_sub_while_can(r'(\\u\w{4})', lambda x: x[1].encode("utf-8").decode('unicode_escape'), stringt)
